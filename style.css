@@ -1,0 +1,314 @@
+Reset styles * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #e5e5e5;
+  color: #333;
+}
+
+.moving-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff00;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .logo img {
+  width: 120px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex; /* ჰორიზონტალური განლაგება */
+  gap: 15px; /* სივრცე ელემენტებს შორის */
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px; /* შიდა სივრცე */
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #444;
+  border-radius: 5px;
+}
+
+/* მობილური მოწყობილობებისთვის მენიუს დამალვა */
+header nav ul {
+  display: none; /* მენიუ არ გამოჩნდეს */
+}
+
+header button {
+  display: block;
+  background: #444;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Desktop ზომის ეკრანებისთვის (მეტი სივრცე) */
+@media (min-width: 768px) {
+  header nav ul {
+    display: flex; /* Desktop-ზე მენიუ ჩანს */
+  }
+  header button {
+    display: none; /* "Menu" ღილაკი აღარ ჩანს */
+  }
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 100px;
+  border-radius: 2%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #cabfbf;
+  color: #333;
+}
+
+#hero {
+  background-image: url("./img/55.jpg"); /* ჩასვით თქვენი სურათის მისამართი */
+  background-size: cover; /* სურათი სრულად შეავსებს კონტეინერს */
+  background-repeat: no-repeat; /* არ განმეორდეს */
+  background-position: center; /* ცენტრში განათავსეთ */
+  color: white; /* ტექსტის ფერი */
+  padding: 150px 20px; /* სივრცე ტექსტის განთავსებისთვის */
+  text-align: center; /* ტექსტის ცენტრირება */
+  width: 100vw; /* სექციის სიგანე ფანჯრის სრულ სიგანეზე */
+  height: 100vh; /* სექციის სიმაღლე ფანჯრის სრულ სიმაღლეზე */
+  margin: 0; /* გამორიცხეთ არასაჭირო საზღვრები */
+}
+
+/* ჰერო სექციის სათაური და ტექსტი */
+#hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#hero .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#hero .btn:hover {
+  background: #e65c00; /* ღილაკის ჩრდილის ეფექტი */
+}
+
+/* სხვა სექციების სტილი */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#about,
+#videos,
+#faq {
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+#about h2,
+#videos h2,
+#faq h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#videos .video-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#videos .video-container iframe {
+  width: 300px;
+  height: 200px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#about,
+#videos,
+#faq {
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+#about h2,
+#videos h2,
+#faq h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#videos .video-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#videos .video-container iframe {
+  width: 300px;
+  height: 200px;
+}
+
+.faq-item {
+  margin: 20px 0;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ლოგოს კონტეინერი */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* კონტეინერის სიმაღლე */
+  background-color: #000; /* ფონური ფერი */
+}
+
+/* ლოგოს სტილი */
+.logo {
+  width: 120px; /* ლოგოს ზომა */
+  height: auto;
+  animation: glow 2s infinite alternate, rotate 5s linear infinite;
+  border-radius: 50%;
+}
+
+/* მანათობელი ეფექტი */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+  100% {
+    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 60px #00ff00;
+  }
+}
+
+.logo {
+  width: 100px; /* ლოგოს ზომა */
+  height: 100px;
+  animation: glow 2s infinite alternate, rotate 5s linear infinite;
+  /* ამოიღეთ border-radius ან შეცვალეთ */
+  border-radius: 0; /* თუ არ გინდათ მრგვალი ლოგო */
+}
